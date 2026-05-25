@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
@@ -12,8 +11,13 @@ public class CalculatorTest {
     }
 
     @Test
+    void testSubtraction() {
+        assertEquals(10, calc.subtract(100, 90));
+    }
+
+    @Test
     void testDivision() {
-        assertEquals(2, calc.divide(10, 5));
+        assertEquals(12, calc.divide(60, 5));
     }
 
     @Test
